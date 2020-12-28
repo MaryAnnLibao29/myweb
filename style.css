@@ -1,0 +1,388 @@
+body {
+  font-family: "Arial";
+  margin: 0;
+}
+
+h1 {
+  padding: 8px;
+  background: rgba(255, 0, 0, 0.8);
+  border-radius: 8px;
+  margin: 0;
+  font-size: 64px;
+  font-family: "Arial";
+}
+
+p {
+  line-height: 1.5;
+}
+
+main {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Inputs */
+
+
+/* Button for Verse */
+
+.b-btun{
+	margin-top: 50px;
+	padding: 10px;
+	text-allign: right;
+	background: white;
+	position: absolute;
+	top: 7%;
+	right: 2%;
+	overflow: hidden;
+}
+
+.b-btun input{
+	display: block;
+	width: 100%;
+	padding: 0 5px;
+	height: 42px;
+	text-align: center;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+}
+
+.b-bttn{
+	margin: 5px;
+	margin-bottom: 20px;
+	background: black;
+	color: white;
+	cursor-pointer;
+	transition: 0.8s;
+}
+.b-bttn:hover{
+	transform: scale(0.96);
+}
+
+
+/* title */
+
+#title {
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.2) url("3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: white;
+}
+
+#title h1 {
+  background: black;
+  border-radius: 100px;
+  padding: 0 50px;
+  font-size: 70px;
+}
+
+#title h3 {
+  background: red;
+  padding: 0 24px;
+  font-size: 25px;
+}
+
+
+/* Navigation */
+
+nav {
+  height: 72px;
+  background: black;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  font-family: "Arial";
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px 0 0;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+nav a {
+  padding: 0 32px;
+  color: white;
+  transition: 0.4s;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+.active {
+  color: pink;
+}
+
+#logo-img {
+  display: flex;
+  height: 100%;
+  background: black;
+  padding: 0 32px;
+  align-items: center;
+  color: white;
+  transition: 0.4s;
+}
+
+#logo-img img {
+  height: 80px;
+}
+
+#logo-img:hover {
+  background: black;
+}
+
+#menu-icon {
+  height: 100%;
+  font-size: 28px;
+  padding: 0 4px;
+  color: gray;
+  display: none;
+  align-items: center;
+}
+
+
+/* Slideout Menu */
+
+#slideout-menu {
+  display: none;
+  background: black;
+  z-index: 100;
+  position: fixed;
+  transition: 0.4s;
+  margin-top: 72px;
+  width: 100%;
+  text-align: center;
+  opacity:0;
+  pointer-events:none;
+}
+
+#slideout-menu ul {
+  list-style: none;
+  padding: 0 32px;
+}
+
+#slideout-menu ul li {
+  padding: 8px;
+}
+
+#slideout-menu a {
+  font-family: "Arial";
+  font-size: 20px;
+  color: white;
+}
+
+#slideout-menu input {
+  width: 85%;
+  padding: 8px;
+  font-family: "Arial";
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Sections */
+
+section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.section-heading {
+  font-size: 32px;
+  font-family: "Arial";
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  transition: all 0.4s;
+  display: inline-block;
+  padding: 4px 32px;
+}
+
+.section-heading:hover {
+  padding: 4px 48px;
+  background: gray;
+}
+
+
+/* Image */
+
+.image {
+  transition: 0.4s;
+}
+
+.image:hover {
+  box-shadow: 0 10px 6px -6px #333;
+}
+
+.card .description {
+  padding: 0 20px;
+}
+
+.dept-design{
+  color:#999;
+  font-size:14px;
+  padding: 16px;
+  font-family:'Arial';
+}
+
+.dept-design a{
+  color:#333;
+}
+
+/* Button Read more */
+
+.btn-readmore {
+  padding: 8px 24px;
+  border: 3px solid black;
+  transition: 0.4s;
+  display: inline-block;
+  margin-bottom: 24px;
+  margin-left: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  background: white;
+}
+
+.btn-readmore:hover {
+  background: gray;
+  text-decoration: none;
+  padding: 8px 64px 8px 24px;
+  color: white;
+}
+
+/* Footer */
+
+footer {
+  background: red;
+  padding: 8px;
+  color: #eee;
+  display: flex;
+}
+
+footer a {
+  color: white;
+}
+
+footer #left-footer {
+  flex: 3;
+  border-right: 1px solid red;
+  padding-left: 32px;
+}
+
+footer #left-footer ul {
+  padding: 0;
+  list-style: none;
+  line-height: 2;
+}
+
+footer #right-footer {
+  flex: 8;
+  padding: 8px;
+  text-align: right;
+}
+footer #right-footer ul {
+  padding: 0;
+  list-style: none;
+  line-height: 2;
+}
+
+
+/* Department page */
+
+.page-heading{
+  font-size:32px;
+  font-family:'Arial';
+  border-left:3px solid black;
+  border-right:3px solid black;
+  transition: all 0.4s;
+  display:inline-block;
+  padding:4px 32px;
+  margin-top: 120px;
+}
+
+.page-heading:hover{
+  padding:4px 48px;
+  background:gray;
+}
+
+.description-design{
+  color:red;
+  font-size: 17px;
+  padding-left:8px;
+  font-family:'Calibri';
+}
+
+.description-design a{
+  color: gray;
+}
+
+
+/* Sermon Area */
+
+#page-container{
+  display: flex;
+}
+
+#department{
+  display: flex;
+  flex-direction:column;
+  width:100%;
+  border-left:0px;
+}
+
+#department .card{
+  width:100%;
+}
+
+#department .image:hover{
+  box-shadow: gray;
+}
+
+
+
+/* alignments*/
+@media (min-width: 720px) {
+  main {
+    width: 95%;
+  }
+  .card {
+    width: 45%;
+  }
+  .card .image img {
+    width: 100%;
+  }
+}
+
+/* width of the page  */
+
+@media (min-width: 100px) {
+  main {
+    width: 99.5%;
+  }
+}
